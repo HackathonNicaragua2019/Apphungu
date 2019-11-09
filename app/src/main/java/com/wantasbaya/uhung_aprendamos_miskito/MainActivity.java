@@ -2,7 +2,9 @@ package com.wantasbaya.uhung_aprendamos_miskito;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.view.WindowManager;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,18 +13,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        git init
-        git add .
-        git commit - m "mensaje"
-        git add remote origin url
-        git push origin master
-
-        Actualizar archivos
-
-        git status
-        git add
-        git commit -m "Mensaje"
-        git push origin master
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_REVERSE_PORTRAIT);
+        getSupportActionBar().hide();
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
     }
 }
