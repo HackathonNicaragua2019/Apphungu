@@ -11,18 +11,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        git init
-        git add .
-        git commit - m "mensaje"
-        git add remote origin url
-        git push origin master
-
-        Actualizar archivos
-
-        git status
-        git add
-        git commit -m "Mensaje"
-        git push origin master
-
+        int desarrollo = 1;
     }
 }
