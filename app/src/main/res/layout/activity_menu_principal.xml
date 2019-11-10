@@ -192,7 +192,7 @@
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/materiales"
+        android:id="@+id/interactivo"
         android:layout_width="126dp"
         android:layout_height="96dp"
         android:layout_marginStart="32dp"
@@ -268,7 +268,7 @@
         android:background="@drawable/button_redondo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materiales">
+        app:layout_constraintTop_toBottomOf="@+id/interactivo">
 
         <ImageView
             android:id="@+id/imgred"
