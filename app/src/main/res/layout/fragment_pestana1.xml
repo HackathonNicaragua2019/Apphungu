@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".pestana1"
-    android:background="@drawable/fondo_10">
+    >
 
     <ImageView
         android:id="@+id/imageView"
@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/regisDept"
+        android:id="@+id/nombre"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -38,7 +38,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/RegisMuni"
+        android:id="@+id/apellido"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -51,10 +51,10 @@
         android:hint="Apellido"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/regisDept" />
+        app:layout_constraintTop_toBottomOf="@+id/nombre" />
 
     <EditText
-        android:id="@+id/regisEmail"
+        android:id="@+id/correo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -67,7 +67,7 @@
         android:hint="Correo electrónico"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RegisMuni" />
+        app:layout_constraintTop_toBottomOf="@+id/apellido" />
 
     <EditText
         android:id="@+id/contra1"
@@ -83,10 +83,10 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/regisEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/correo" />
 
     <EditText
-        android:id="@+id/celular"
+        android:id="@+id/contra2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"

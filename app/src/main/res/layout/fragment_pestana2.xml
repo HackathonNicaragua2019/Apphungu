@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".pestana2"
-    android:background="@drawable/fondo_10">
+    >
 
     <ImageView
         android:id="@+id/imageView"
@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/regisDept"
+        android:id="@+id/departamento"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -38,7 +38,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/RegisMuni"
+        android:id="@+id/municipio"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -51,7 +51,7 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/regisDept" />
+        app:layout_constraintTop_toBottomOf="@+id/departamento" />
 
     <RadioGroup
         android:id="@+id/sexo"
@@ -65,7 +65,7 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RegisMuni">
+        app:layout_constraintTop_toBottomOf="@+id/municipio">
 
         <RadioButton
             android:id="@+id/hombre"
@@ -93,10 +93,10 @@
         android:layout_marginRight="8dp"
         android:ems="10"
         android:hint="Número celular"
-        android:inputType="textPassword"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RegisMuni" />
+        app:layout_constraintTop_toBottomOf="@+id/municipio" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

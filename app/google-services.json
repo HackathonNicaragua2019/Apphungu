@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "629348428142",
+    "firebase_url": "https://uhungapp.firebaseio.com",
+    "project_id": "uhungapp",
+    "storage_bucket": "uhungapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629348428142:android:5f89b6f9c1175e0fdcb97f",
+        "android_client_info": {
+          "package_name": "com.wantasbaya.uhung_aprendamos_miskito"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "629348428142-fiu8m7gscef4amv6i7i0qkato316on2a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wantasbaya.uhung_aprendamos_miskito",
+            "certificate_hash": "1d657b2708bd4baa435c19ad8430bc5b202a711f"
+          }
+        },
+        {
+          "client_id": "629348428142-h82ats0h7kttrj6ij02lf92m15i8bljl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQVlgwSOTfDo-7D9A4b-_a8caSg3962JE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "629348428142-h82ats0h7kttrj6ij02lf92m15i8bljl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

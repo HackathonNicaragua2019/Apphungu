@@ -5,7 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".pestana3"
-    android:background="@drawable/fondo_traslucido">
+    >
+
+    <TextView
+        android:id="@+id/academico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Nivel Académico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <RadioGroup
         android:id="@+id/NivelAcade"
@@ -14,14 +28,14 @@
         android:layout_height="150dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/academico">
 
         <RadioButton
             android:id="@+id/primaria"
@@ -53,36 +67,42 @@
 
     </RadioGroup>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:text="Nivel Académico"
+        android:ems="10"
+        android:hint="Descripción"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/NivelAcade" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/crear_cuenta"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="64dp"
         android:layout_marginEnd="8dp"
+
         android:layout_marginRight="8dp"
-        android:text="Crear Cuenta"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         android:background="@drawable/button_redondo"
         android:textColor="@color/colorWhithe"
+        android:text="Crear Cuenta"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/NivelAcade" />
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
