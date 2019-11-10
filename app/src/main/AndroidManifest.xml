@@ -3,6 +3,7 @@
     package="com.wantasbaya.uhung_aprendamos_miskito">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -11,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".pdfinteractive"></activity>
+        <activity android:name=".red_social"></activity>
+        <activity android:name=".pdfinteractive" />
         <activity android:name=".curso_moodle" />
         <activity android:name=".diccionario" />
         <activity android:name=".Video_interactivo" />

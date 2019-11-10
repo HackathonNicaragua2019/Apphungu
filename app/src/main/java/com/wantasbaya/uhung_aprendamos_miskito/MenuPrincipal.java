@@ -15,7 +15,7 @@ import android.widget.TextView;
 public class MenuPrincipal extends AppCompatActivity {
 
     private TextView lema,cursos,oferta,diccionario,tracd,mate,txtjue,txtred;
-    private ConstraintLayout misCursos, btn_ofer, laytrad,interactivo,laydic;
+    private ConstraintLayout misCursos, btn_ofer, laytrad,interactivo,laydic,red;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +52,7 @@ public class MenuPrincipal extends AppCompatActivity {
             laytrad = (ConstraintLayout) findViewById(R.id.laytrad);
         interactivo = (ConstraintLayout) findViewById(R.id.interactivo);
         laydic = (ConstraintLayout) findViewById(R.id.laydic);
+        red = (ConstraintLayout) findViewById(R.id.red);
 
             misCursos.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -86,6 +87,12 @@ public class MenuPrincipal extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MenuPrincipal.this,diccionario.class));
+            }
+        });
+        red.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MenuPrincipal.this,red_social.class));
             }
         });
 
