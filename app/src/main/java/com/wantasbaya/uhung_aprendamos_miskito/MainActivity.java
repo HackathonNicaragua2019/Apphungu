@@ -2,11 +2,22 @@ package com.wantasbaya.uhung_aprendamos_miskito;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.WindowManager;
 
+import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.os.Bundle;
+import android.view.View;
+import android.view.WindowManager;
+import android.widget.Button;
+
+
 public class MainActivity extends AppCompatActivity {
+
+    private Button btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +28,17 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
+
         int master = 3;
 
+        btn = (Button) findViewById(R.id.button);
+
+
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,crear_cuenta.class));
+            }
+        });
     }
 }

@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">UHUNG_Aprendamos_Miskito</string>
+    <string name="app_name">Registro de Usuario</string>
+    <string name="title_activity_crear_cuenta">crear_cuenta</string>
+    <string name="tab_text_1">Datos Generales</string>
+    <string name="tab_text_2">Localidad</string>
+    <string name="tab_text_3">Fotos</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
