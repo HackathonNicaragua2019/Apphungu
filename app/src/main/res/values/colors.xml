@@ -2,7 +2,8 @@
 <resources>
     <color name="colorPrimary">#FEA327</color>
     <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#C41017</color>
+    <color name="colorAccent">#991914</color>
     <color name="colorWhithe">#ffffff</color>
-    <color name="colortransparentwhite">#cccccc</color>
+    <color name="colornaranja">#FEA327</color>
+
 </resources>
