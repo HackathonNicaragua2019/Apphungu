@@ -7,8 +7,8 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="uhung_aprendamos_miskito"
+        android:icon="@drawable/uhung_pie"
+        android:label="UHUNG Aprendamos Miskito"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
