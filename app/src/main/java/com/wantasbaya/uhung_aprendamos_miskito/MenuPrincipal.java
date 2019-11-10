@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class MenuPrincipal extends AppCompatActivity {
 
-    TextView lema,cursos,oferta;
+    TextView lema,cursos,oferta,diccionario,tracd,mate,txtjue,txtred;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,12 +24,22 @@ public class MenuPrincipal extends AppCompatActivity {
         lema = (TextView)findViewById(R.id.nombreus);
         cursos = (TextView)findViewById(R.id.cursos);
         oferta = (TextView)findViewById(R.id.oferta);
+        diccionario = (TextView)findViewById(R.id.diccionario);
+        tracd = (TextView)findViewById(R.id.tracd);
+        mate = (TextView)findViewById(R.id.mate);
+        txtjue = (TextView)findViewById(R.id.mate);
+        txtred = (TextView)findViewById(R.id.txtred);
 
         Typeface custom_font = Typeface.createFromAsset(getAssets(),  "fonts/PhosphateSolid.ttf");
 
         lema.setTypeface(custom_font);
         cursos.setTypeface(custom_font);
         oferta.setTypeface(custom_font);
+        diccionario.setTypeface(custom_font);
+        tracd.setTypeface(custom_font);
+        mate.setTypeface(custom_font);
+        txtjue.setTypeface(custom_font);
+        txtred.setTypeface(custom_font);
 
     }
 }
