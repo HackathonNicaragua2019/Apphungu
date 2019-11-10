@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".cultura"></activity>
+        <activity android:name=".galeria_interactiva"></activity>
+        <activity android:name=".img_inteactive" />
+        <activity android:name=".cultura" />
         <activity android:name=".traductor" />
         <activity android:name=".OfertaCursos" />
         <activity android:name=".MenuPrincipal" />

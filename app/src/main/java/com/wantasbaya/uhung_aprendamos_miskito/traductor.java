@@ -35,7 +35,6 @@ public class traductor extends AppCompatActivity {
 
     TextView lema;
     TextView entrada, traduccion;
-
     ImageView mic;
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
@@ -51,6 +50,10 @@ public class traductor extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_traductor);
 
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        getSupportActionBar().hide();
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         entrada = (TextView) findViewById(R.id.entrada);
         mic = (ImageView) findViewById(R.id.btn_mic);
         traduccion = (TextView) findViewById(R.id.traduccion);
@@ -59,9 +62,7 @@ public class traductor extends AppCompatActivity {
 
 
 
-        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        getSupportActionBar().hide();
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
 
         lema = (TextView)findViewById(R.id.traductor);
 

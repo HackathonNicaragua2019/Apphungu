@@ -15,7 +15,7 @@ import android.widget.TextView;
 public class MenuPrincipal extends AppCompatActivity {
 
     private TextView lema,cursos,oferta,diccionario,tracd,mate,txtjue,txtred;
-    private ConstraintLayout misCursos, btn_ofer, laytrad;
+    private ConstraintLayout misCursos, btn_ofer, laytrad,interactivo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +35,7 @@ public class MenuPrincipal extends AppCompatActivity {
             txtjue = (TextView)findViewById(R.id.txtjue);
             txtred = (TextView)findViewById(R.id.txtred);
 
+
             Typeface custom_font = Typeface.createFromAsset(getAssets(),  "fonts/PhosphateSolid.ttf");
 
             lema.setTypeface(custom_font);
@@ -49,6 +50,7 @@ public class MenuPrincipal extends AppCompatActivity {
             misCursos = (ConstraintLayout) findViewById(R.id.lay1);
             btn_ofer = (ConstraintLayout) findViewById(R.id.constraintLayout3);
             laytrad = (ConstraintLayout) findViewById(R.id.laytrad);
+        interactivo = (ConstraintLayout) findViewById(R.id.interactivo);
 
             misCursos.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -69,6 +71,13 @@ public class MenuPrincipal extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     startActivity(new Intent(MenuPrincipal.this,traductor.class));
+            }
+        });
+
+        interactivo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MenuPrincipal.this,cultura.class));
             }
         });
 
