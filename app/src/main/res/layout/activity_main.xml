@@ -31,8 +31,9 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-        android:background="@drawable/button_redondo"
+
         android:text="    Iniciar Sesión    "
+        android:background="@drawable/button_redondo"
         android:textColor="@color/colorWhithe"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

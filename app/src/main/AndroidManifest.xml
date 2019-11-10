@@ -11,7 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".galeria_interactiva"></activity>
+        <activity android:name=".pdfinteractive"></activity>
+        <activity android:name=".curso_moodle" />
+        <activity android:name=".diccionario" />
+        <activity android:name=".Video_interactivo" />
+        <activity android:name=".galeria_interactiva" />
         <activity android:name=".img_inteactive" />
         <activity android:name=".cultura" />
         <activity android:name=".traductor" />

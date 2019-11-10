@@ -16,7 +16,7 @@ public class cultura extends AppCompatActivity {
     private TextView vidinter, galeria,  doctdigi, imageinter,txtmapas;
     TextView lemas;
 
-    ConstraintLayout layimginter,constraintLayout3;
+    ConstraintLayout layimginter,constraintLayout3,laydic,lay1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +44,8 @@ public class cultura extends AppCompatActivity {
 
         layimginter = (ConstraintLayout) findViewById(R.id.layimginter);
         constraintLayout3 = (ConstraintLayout) findViewById(R.id.constraintLayout3);
+        laydic= (ConstraintLayout) findViewById(R.id.laydic);
+        lay1= (ConstraintLayout) findViewById(R.id.lay1);
 
         layimginter.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,6 +58,18 @@ public class cultura extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(cultura.this,galeria_interactiva.class));
+            }
+        });
+        laydic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(cultura.this,pdfinteractive.class));
+            }
+        });
+        lay1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(cultura.this,Video_interactivo.class));
             }
         });
 
