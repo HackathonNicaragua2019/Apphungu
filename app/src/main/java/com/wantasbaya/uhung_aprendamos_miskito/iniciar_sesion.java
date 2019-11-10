@@ -43,7 +43,7 @@ public class iniciar_sesion extends AppCompatActivity implements View.OnClickLis
         ingresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(iniciar_sesion.this,mis_cursos.class));
+                startActivity(new Intent(iniciar_sesion.this,MenuPrincipal.class));
             }
         });
 

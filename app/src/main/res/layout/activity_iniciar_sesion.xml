@@ -31,6 +31,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
+
         android:inputType="textPersonName"
         android:hint="Correo Electrónico"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,6 +47,7 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+
         android:ems="10"
         android:inputType="textPersonName"
         android:hint="Contraseña"

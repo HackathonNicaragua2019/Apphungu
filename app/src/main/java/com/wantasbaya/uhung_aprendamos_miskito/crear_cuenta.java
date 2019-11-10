@@ -66,8 +66,11 @@ public class crear_cuenta extends AppCompatActivity implements pestana1.OnFragme
         confirmar = (Button) findViewById(R.id.crear_cuenta);
 
         progressDialog = new ProgressDialog(this);
-/*
-        confirmar.setOnClickListener(new View.OnClickListener() {
+
+
+
+
+     /*   confirmar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 RegistrarUsuario();
@@ -85,7 +88,11 @@ public class crear_cuenta extends AppCompatActivity implements pestana1.OnFragme
 
     }
 
+public void metodo(View v){
 
+
+
+}
 
     public void RegistrarUsuario() {
 

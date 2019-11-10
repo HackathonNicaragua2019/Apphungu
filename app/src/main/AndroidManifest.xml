@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".mis_cursos"></activity>
+        <activity android:name=".MenuPrincipal"></activity>
+        <activity android:name=".mis_cursos" />
         <activity android:name=".iniciar_sesion" />
         <activity
             android:name=".crear_cuenta"
