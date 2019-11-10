@@ -67,7 +67,7 @@ public class crear_cuenta extends AppCompatActivity implements pestana1.OnFragme
 
         progressDialog = new ProgressDialog(this);
 
-
+        inciarfirebase();
 
 
      /*   confirmar.setOnClickListener(new View.OnClickListener() {
@@ -106,7 +106,7 @@ public void metodo(View v){
         String muni = municipio.getText().toString();
         String cel= celular.getText().toString();
 
-        inciarfirebase();
+
 
         if (nomb.equals("")||ape.equals("")||cor.equals("")||con1.equals("")||con2.equals("")||dept.equals("")||muni.equals("")||cel.equals("")){
             Toast toast1 = Toast.makeText(getApplicationContext(), "Existen campos vacios", Toast.LENGTH_SHORT);
