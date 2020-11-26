@@ -1,0 +1,107 @@
+<ion-header>
+  <ion-item lines="none">
+    <ion-avatar slot="start">
+      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+    </ion-avatar>
+    <ion-label>
+      <p>Bienvenido,</p>
+      <h3>Samuel Vallecillo</h3>
+    </ion-label>  
+  </ion-item>
+  
+</ion-header>
+
+<ion-content scrollY="false">
+
+  <ion-content>
+  <!--  <ion-segment scrollable value="1">
+
+      <ion-segment-button value="1">
+        <ion-label>Memoria</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="2">
+        <ion-label>Sopa de letras</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="3">
+        <ion-label>Emparejamiento</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="4">
+        <ion-label>Crucigramas</ion-label>
+      </ion-segment-button>
+
+   </ion-segment>-->
+
+   <ion-slides [options]="options">
+    <ion-slide>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" class="poster-col">
+          <img class="poster" src="https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/ImagenesGames%2Ftrivia.png?alt=media&token=b2afc210-f5b7-4b3d-8bf4-180b94c90582" alt="">
+        </ion-col>
+        <ion-col size="12">
+          <h5 class="ion-no-margin">¿Conocerás las respuestas?</h5>
+          <p>Esta es la descripción de lo que deberá realizar en el juego</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-slide>
+  <ion-slide>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" class="poster-col">
+          <img class="poster" src="https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/ImagenesGames%2Fdesafios.png?alt=media&token=295bdc47-1d4b-42e6-91fa-5d07b11366c7" alt="">
+        </ion-col>
+        <ion-col size="12">
+          <h5 class="ion-no-margin">¿Te atreves a ganar?</h5>
+          <p>Esta es la descripción de lo que deberá realizar en el juego</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-slide>
+  <ion-slide>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" class="poster-col">
+          <img class="poster" src="https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/ImagenesGames%2Fmemoria.png?alt=media&token=8de49024-4b75-4bec-a77d-fdc20fe8ea85" alt="">
+        </ion-col>
+        <ion-col size="12">
+          <h5 class="ion-no-margin">¡No se te olvidará!</h5>
+          <p>Esta es la descripción de lo que deberá realizar en el juego</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-slide>
+  <ion-slide>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" class="poster-col">
+          <img class="poster" src="https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/ImagenesGames%2Fpareja.png?alt=media&token=cc5c6a9b-b181-4447-8436-44959667b7de" alt="">
+        </ion-col>
+        <ion-col size="12">
+          <h5 class="ion-no-margin">¡Sin miedo al éxito!</h5>
+          <p>Esta es la descripción de lo que deberá realizar en el juego</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-slide>
+  </ion-slides>
+
+  </ion-content>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" (click)="drawer.toggleDrawer()" expand="full">
+    <ion-fab-button>
+      <ion-icon name="menu-sharp"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+    
+    <app-drawer #drawer></app-drawer>
+
+</ion-content>

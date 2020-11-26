@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-item lines="none">
+    <ion-avatar slot="start">
+      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+    </ion-avatar>
+    <ion-label>
+      <p>Bienvenido,</p>
+      <h3>Samuel Vallecillo</h3>
+    </ion-label>  
+  </ion-item>
+  
+</ion-header>
+
+<ion-content scrollY="false">
+<br>
+  <ion-card routerLink="/traductor" routerDirection="forward">
+    <div class="card">
+      <div class="img-avatar">
+        <img src="https://i.ibb.co/ydgkqm9/logo.png"/>
+      </div>
+      <div class="card-text">
+        <div class="portada">
+        
+        </div>
+        <div class="title-total">   
+          <div class="title">Traductor</div>
+          <h2>Traductor español - Miskito</h2>
+      
+      <div class="desc">¡Vamos! anímate a comunicarte con nuestra Costa Caribe.</div>
+    </div>
+     
+      </div>
+    </div>
+    
+  </ion-card>
+<br><br>
+  <ion-card routerLink="/diccionario" routerDirection="forward">
+    <div class="card">
+      <div class="img-avatar">
+        <img src="https://i.ibb.co/ydgkqm9/logo.png"/>
+      </div>
+      <div class="card-text">
+        <div class="portada">
+        
+        </div>
+        <div class="title-total">   
+          <div class="title">Diccionario</div>
+          <h2>Diccionario español - Miskito</h2>
+      
+      <div class="desc">¡Acompañame! conozcamos el significado de las palabras de nuestra lengua miskita.</div>
+    </div>
+     
+      </div>      
+    </div>
+    
+  </ion-card>
+   
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed" routerLink="/menu-prin" routerDirection="back">
+    <ion-fab-button>
+      <ion-icon name="home-sharp"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" (click)="drawer.toggleDrawer()" expand="full">
+    <ion-fab-button>
+      <ion-icon name="menu-sharp"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+    
+    <app-drawer #drawer>
+    </app-drawer>
+
+</ion-content>

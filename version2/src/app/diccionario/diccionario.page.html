@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-item lines="none">
+    <ion-avatar slot="start">
+      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+    </ion-avatar>
+    <ion-label>
+      <p>Bienvenido,</p>
+      <h3>Samuel Vallecillo</h3>
+    </ion-label>  
+  </ion-item>
+  
+</ion-header>
+
+
+<ion-content scrollY="false">
+  <ion-content>
+      <ion-list>
+        <ion-item *ngFor = "let indice of silaba" [routerLink]="['/diccionario', indice.letra]">
+          <ion-avatar slot="start">
+            <img src="https://i.ibb.co/ydgkqm9/logo.png"/>
+          </ion-avatar>
+          <ion-label>Letra: {{indice.letra}}</ion-label>
+          <ion-button fill="clear" slot="end">
+            <ion-icon slot="icon-only" name="arrow-forward-outline"></ion-icon>
+          </ion-button>
+        </ion-item>
+      </ion-list>    
+
+  </ion-content>
+
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed" routerLink="/menu-prin" routerDirection="back">
+    <ion-fab-button>
+      <ion-icon name="home-sharp"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" (click)="drawer.toggleDrawer()" expand="full">
+    <ion-fab-button>
+      <ion-icon name="menu-sharp"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+    
+    <app-drawer #drawer>
+    </app-drawer>
+</ion-content>

@@ -1,0 +1,113 @@
+<ion-header>
+  <ion-item lines="none">
+    <ion-avatar slot="start">
+      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+    </ion-avatar>
+    <ion-label>
+      <p>Bienvenido,</p>
+      <h3>Samuel Vallecillo</h3>
+    </ion-label>  
+  </ion-item>
+  
+</ion-header>
+
+
+<ion-content scrollY="false">
+
+  <div class="slides ion-margin-bottom">
+    <ion-slides [options] = "slidesOptions">
+      <ion-slide>
+       
+        <ion-card>
+          <img src="https://i.ibb.co/VMrRV6k/grupo.jpg">
+          <ion-card-header>
+            <ion-card-title class="ion-text-left">Curso 1</ion-card-title>
+          </ion-card-header>
+          <ion-card-content class="ion-text-left">
+            Haz realizado las actividades 1 y 2 del curso.
+          </ion-card-content>
+        </ion-card>
+
+      </ion-slide>
+      <ion-slide>
+       
+        <ion-card>
+          <img src="https://i.ibb.co/VMrRV6k/grupo.jpg">
+          <ion-card-header>
+            <ion-card-title class="ion-text-left">Curso 1</ion-card-title>
+          </ion-card-header>
+          <ion-card-content class="ion-text-left">
+            Haz realizado las actividades 1 y 2 del curso.
+          </ion-card-content>
+        </ion-card>
+
+      </ion-slide>
+      <ion-slide>
+       
+        <ion-card>
+          <img src="https://i.ibb.co/VMrRV6k/grupo.jpg">
+          <ion-card-header>
+            <ion-card-title class="ion-text-left">Curso 1</ion-card-title>
+          </ion-card-header>
+          <ion-card-content class="ion-text-left">
+            Haz realizado las actividades 1 y 2 del curso.
+          </ion-card-content>
+        </ion-card>
+
+      </ion-slide>
+      <ion-slide>
+       
+        <ion-card>
+          <img src="https://i.ibb.co/VMrRV6k/grupo.jpg">
+          <ion-card-header>
+            <ion-card-title class="ion-text-left">Curso 1</ion-card-title>
+          </ion-card-header>
+          <ion-card-content class="ion-text-left">
+            Haz realizado las actividades 1 y 2 del curso.
+          </ion-card-content>
+        </ion-card>
+
+      </ion-slide>
+      <ion-slide>
+       
+        <ion-card>
+          <img src="https://i.ibb.co/VMrRV6k/grupo.jpg">
+          <ion-card-header>
+            <ion-card-title class="ion-text-left">Curso 1</ion-card-title>
+          </ion-card-header>
+          <ion-card-content class="ion-text-left">
+            Haz realizado las actividades 1 y 2 del curso.
+          </ion-card-content>
+        </ion-card>
+
+      </ion-slide>
+    </ion-slides>
+
+  </div>
+
+<div class="contendor">
+  <div class="logo">
+
+    <img src="https://i.ibb.co/ydgkqm9/logo.png"/>
+        
+  </div>
+
+  <div class="titulo">
+    <h3>Estas son las últimas actividades que has realizado</h3>
+  </div>
+</div>
+
+<ion-fab vertical="bottom" horizontal="start" slot="fixed"expand="full">
+  <ion-fab-button>
+    <ion-icon name="menu-sharp">ssss</ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+<ion-fab vertical="bottom" horizontal="end" slot="fixed" (click)="drawer.toggleDrawer()" expand="full">
+  <ion-fab-button>
+    <ion-icon name="menu-sharp"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+  
+  <app-drawer #drawer></app-drawer>
+</ion-content>

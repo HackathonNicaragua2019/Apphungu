@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-item lines="none">
+    <ion-avatar slot="start">
+      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+    </ion-avatar>
+    <ion-label>
+      <p>Bienvenido,</p>
+      <h3>Samuel Vallecillo</h3>
+    </ion-label>  
+  </ion-item>
+  
+</ion-header>
+
+<ion-content scrollY="false">
+<ion-content scrollY="false" style="height: 90%">
+  <br>
+  <ion-card class="espaniol" >
+    <img src="https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/ImagenesGames%2Fuhung_blanco.png?alt=media&token=4fbd009b-7ff2-46b8-92e6-a4d98be463ba">   
+    
+      <ion-card-subtitle>Español</ion-card-subtitle>
+      <p>{{estatico}}</p>
+    
+    
+  </ion-card>
+
+  <ion-fab class="microfono" vertical="center" horizontal="center" slot="fixed" (click)="Escuchar()">
+    <ion-fab-button>
+      <ion-icon name="mic-sharp"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-card class="miskito">
+    <ion-card-header>
+      <ion-card-subtitle>Miskito</ion-card-subtitle>
+      <ion-card-title>.....</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+    
+    
+  </ion-content>
+    <ion-fab vertical="bottom" horizontal="start" slot="fixed" routerLink="/menu-prin" routerDirection="back">
+      <ion-fab-button>
+        <ion-icon name="home-sharp"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+    
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed" (click)="drawer.toggleDrawer()" expand="full">
+      <ion-fab-button>
+        <ion-icon name="menu-sharp"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+      
+      <app-drawer #drawer>
+      </app-drawer>
+    
+</ion-content>

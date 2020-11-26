@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-item lines="none">
+    <ion-avatar slot="start">
+      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+    </ion-avatar>
+    <ion-label>
+      <p>Bienvenido,</p>
+      <h3>Samuel Vallecillo</h3>
+    </ion-label>  
+  </ion-item>
+  <ion-searchbar placeholder="Buscar..." #search (ionChange)="ionChange($event)"></ion-searchbar>
+</ion-header>
+<ion-header>
+  <ion-segment [(ngModel)]="selectTabs">   
+    
+    <ion-segment-button value="espaniol">
+      <ion-label>Español | Miskito</ion-label>
+    </ion-segment-button>
+
+    <ion-segment-button value="miskito">
+      <ion-label>Miskito | Español</ion-label>
+    </ion-segment-button>
+
+  </ion-segment>
+</ion-header>
+
+<ion-content>
+
+
+
+    <ion-list *ngIf="palabras_spaniol.length === 0">
+      <ion-item *ngFor= "let i of [1,1,1,1,1,1,1,1,1,1,1,1,1,1]">
+        <ion-skeleton-text animated  width="95%"></ion-skeleton-text>
+      </ion-item>
+    </ion-list>
+
+  <div *ngIf="selectTabs == 'espaniol'">
+
+    
+  <ion-list *ngIf="palabras_spaniol.length > 0">
+    <ion-item *ngFor = "let paniol of palabras_spaniol | filtro:textoBuscar" >
+      <ion-label><b>{{paniol.espaniol}}: </b>{{paniol.miskito}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+  </div>
+
+  <div *ngIf="selectTabs == 'miskito'">
+
+    <ion-list *ngIf="palabras_miskito.length > 0">
+      <ion-item *ngFor = "let miski of palabras_miskito | filtro:textoBuscar" >
+        <ion-label><b>{{miski.miskito}}: </b>{{miski.espaniol}}</ion-label>
+      </ion-item>
+    </ion-list>
+
+  </div>
+    
+</ion-content>

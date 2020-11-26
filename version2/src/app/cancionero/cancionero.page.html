@@ -1,0 +1,145 @@
+<ion-header>
+  <ion-item lines="none">
+    <ion-avatar slot="start">
+      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+    </ion-avatar>
+    <ion-label>
+      <p>Bienvenido,</p>
+      <h3>Samuel Vallecillo</h3>
+    </ion-label>  
+  </ion-item>
+  
+</ion-header>
+
+<ion-content scrollY="false">
+
+  <ion-content>
+
+    <ion-item lines="none" *ngFor="let song of songs" (click)="playSong(song.title, song.subtitle, song.img, song.path)">
+
+      <ion-thumbnail slot="start">
+        <img src="{{song.img}}"/>
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{song.title}}</h2>
+        <p>{{song.subtitle}}</p>
+      </ion-label>
+    </ion-item>  </ion-content>
+
+  <ion-fab *ngIf="!isfull" vertical="bottom" horizontal="end" slot="fixed" (click)="drawer.toggleDrawer()" expand="full">
+    <ion-fab-button>
+      <ion-icon name="menu-sharp"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+    
+    <app-drawer #drawer></app-drawer>
+
+</ion-content>
+
+<!--Vista completa del reproductor-->
+<div class="ion-text-center" id="fullPlayer">
+  
+<!--Icono para minimizar el reproductor-->
+
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="minimize()">
+        <ion-icon slot="end" name="chevron-down-circle-sharp"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <img src="{{currImage}}" alt="" id="currImg" />
+
+  <h2>
+    {{currTitle}}
+  </h2>
+  <p>
+    {{currSubtitle}}
+  </p>
+
+  <ion-item lines="none">
+    <ion-range #range (touchmove)="touchMove()" (touchend)="touchEnd()" (touchstart)="touchStart()" max="{{maxRangevalue}}" [(ngModel)]="currRangeTime">
+      <ion-label slot="start">
+        <ion-text>
+          <b>{{currSecsText}}</b>
+        </ion-text>
+      </ion-label>
+      <ion-label slot="end">
+        <ion-text>
+          <b>{{durationText}}</b>
+        </ion-text>
+      </ion-label>
+    </ion-range>
+  </ion-item>
+
+  <!--Reprodurcir canción previa-->
+  <ion-button fill="clear" (click)="playPrev()">
+    <ion-icon name="play-skip-back-sharp" style="font-size: 30px;"></ion-icon>
+  </ion-button>
+
+  <!--Botón del reproductor-->
+  <ion-button fill="clear" *ngIf="!isPlaying" (click)="play()">
+    <ion-icon name="play-sharp" style="font-size: 40px;"></ion-icon>
+  </ion-button>
+
+  <!--Botón de pausa-->
+  <ion-button fill="clear" *ngIf="isPlaying" (click)="pause()">
+    <ion-icon name="pause-sharp" style="font-size: 40px;"></ion-icon>
+  </ion-button>
+
+  <!--Botón Reproducir canción siguiente-->
+  <ion-button fill="clear" (click)="playNext()">
+    <ion-icon name="play-skip-forward-sharp" style="font-size: 30px;"></ion-icon>
+  </ion-button>
+
+  <ion-list-header>
+    Siguiente canción
+  </ion-list-header>
+
+  <!--Siguiente canción a reproducir-->
+
+  <ion-item>
+    <ion-thumbnail slot="start">
+      <img src="{{upNextImg}}" />
+    </ion-thumbnail>
+    <ion-label>
+      <h2>
+        {{upNextTitle}}
+      </h2>
+      <p>{{upNextSubtitle}}</p>
+    </ion-label>
+  </ion-item>
+</div>
+
+<!--Minimizar la vista del reproductor-->
+<ion-toolbar id="miniPlayer">
+  <ion-item>
+    <ion-thumbnail slot="start" (click)="maximize()">
+      <img src="{{currImage}}" />
+    </ion-thumbnail>
+    <ion-label (click)="maximize()">
+      <h2>{{currTitle}}</h2>
+      <p>{{currSubtitle}}</p>
+    </ion-label>
+
+    <!--Botón de reproductor para la vista minimizada-->
+    <ion-button (click)="play()"  fill="clear" *ngIf="!isPlaying">
+      <ion-icon name="play-sharp" style="font-size: x-large;"></ion-icon>
+    </ion-button>
+
+    <!--Botón de pausa para la vista minimizada-->
+    <ion-button (click)="pause()" fill="clear" *ngIf="isPlaying">
+      <ion-icon name="pause-sharp" style="font-size: x-large;"></ion-icon>
+    </ion-button>
+
+    <!--Botón de cancelación de la música-->
+    <ion-button (click)="cancel()" mode="ios" fill="clear">
+      <ion-icon name="close-sharp" style="font-size: x-large;"></ion-icon>
+    </ion-button>
+  </ion-item>
+
+  <!--Barra de progreso de la reproducción de la música-->
+  <ion-progress-bar value="{{progress}}"></ion-progress-bar>
+
+</ion-toolbar>

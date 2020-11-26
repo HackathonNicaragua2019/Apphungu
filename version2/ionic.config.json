@@ -1,0 +1,7 @@
+{
+  "name": "app_uhung",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
