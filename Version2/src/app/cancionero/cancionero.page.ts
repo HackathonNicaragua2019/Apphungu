@@ -11,23 +11,77 @@ export class CancioneroPage implements OnInit {
 
   songs = [
     {
-      title: "Dan Dan Kokoro",
-      subtitle: "Dragon Ball GT",
-      img: "https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/gt.jpg?alt=media&token=a31064a2-a02c-4066-af62-02e538c712c2",
-      path: "https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/Dan_Dan.mp3?alt=media&token=344ed1dd-8afa-4280-8b8a-922bc7a23d1c"
+      title: "May Pole",
+      subtitle: "Mango Ghost, René Cassells, Arturo Putchie",
+      img: "https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/uhung.fw.png?alt=media&token=1b789c7e-2915-4fd6-80cf-f21ef5bdb66a",
+      path: "https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/canciones%2FMay-Pole%20_Autor_mango-ghost-sabu-rene-poochie.mp3?alt=media&token=21a6d7f1-993a-444f-b786-98f8911f9a03"
     },
     {
-      title: "Blue Bird",
-      subtitle: "Naruto Shippuden",
-      img: "https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/blue_bird.jpg?alt=media&token=205ff211-185c-428b-927e-a63d4920fead",
-      path: "https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/Blue_Bird.mp3?alt=media&token=52c6a74a-3f19-4109-8aca-d9594dffea4f"
+      title: "Come Down Brother Willy",
+      subtitle: "Dimensión Costeña",
+      img: "https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/uhung.fw.png?alt=media&token=1b789c7e-2915-4fd6-80cf-f21ef5bdb66a",
+      path: "https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/canciones%2Fcome-down-brother-willy-dimension-costena.mp3?alt=media&token=3b4d77e9-bb30-42c3-bd79-61c54d79b80a"
     },
     {
-      title: "Butterfly",
-      subtitle: "Digimon Adventura",
-      img: "https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/digimon.jpg?alt=media&token=2eed1051-01bf-403f-8bb3-8e73de4840ff",
-      path: "https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/Butter_Fly.mp3?alt=media&token=f548a5aa-b25e-41a6-a303-87b09ffd936c"
-    }       
+      title: "Himno Nacional de Nicaragua",
+      subtitle: "Miskito",
+      img: "https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/uhung.fw.png?alt=media&token=1b789c7e-2915-4fd6-80cf-f21ef5bdb66a",
+      path: "https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/canciones%2Fhimno-nacional-de-nicaragua-en-miskito.mp3?alt=media&token=992bda14-9d74-4c46-8257-97df982625b4"
+    },
+    {
+      title: "Instrumental Caribbean",
+      subtitle: "Larry",
+      img: "https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/uhung.fw.png?alt=media&token=1b789c7e-2915-4fd6-80cf-f21ef5bdb66a",
+      path: "https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/canciones%2Finstrumental-caribbean-by-larry.mp3?alt=media&token=f9be316d-67e0-4e21-b5d4-ab5cb3c36777"
+    } ,
+    {
+      title: "Mama Lika Kumi",
+      subtitle: "Joy Ramos",
+      img: "https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/uhung.fw.png?alt=media&token=1b789c7e-2915-4fd6-80cf-f21ef5bdb66a",
+      path: "https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/canciones%2Fmama-lika-kumi-joy-ramos-video-oficial.mp3?alt=media&token=bfa38eea-fb1e-425f-baaa-aeb53c335be7"
+    } ,
+    {
+      title: "Miskita Mairin",
+      subtitle: "Layan Siksa",
+      img: "https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/uhung.fw.png?alt=media&token=1b789c7e-2915-4fd6-80cf-f21ef5bdb66a",
+      path: "https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/canciones%2Fmiskita-mairin_autor_Layan%20Siksa%20(Black%20Lion).mp3?alt=media&token=ed986d42-2e8f-453c-830a-40b9eaea30ae"
+    } ,
+    {
+      title: "Miskito",
+      subtitle: "Kabu Waitna",
+      img: "https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/uhung.fw.png?alt=media&token=1b789c7e-2915-4fd6-80cf-f21ef5bdb66a",
+      path: "https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/canciones%2Fmiskito-Kabu%20Waitna.mp3?alt=media&token=5f6322a5-bc54-4701-a5c1-a6ea3c49119a"
+    } ,
+    {
+      title: "Mix Musica Miskita",
+      subtitle: "Sandrita Maryin",
+      img: "https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/uhung.fw.png?alt=media&token=1b789c7e-2915-4fd6-80cf-f21ef5bdb66a",
+      path: "https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/canciones%2Fmix-musica-miskita-sandrita-mayrin-entre-otras.mp3?alt=media&token=7de089a6-897b-4433-9108-bbedf6795349"
+    } ,
+    {
+      title: "Musica Miskita",
+      subtitle: "Papanola",
+      img: "https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/uhung.fw.png?alt=media&token=1b789c7e-2915-4fd6-80cf-f21ef5bdb66a",
+      path: "https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/canciones%2Fmusica-miskita-papanola-tang-si.mp3?alt=media&token=91f99441-eaa2-4648-b09f-1ca013ed978d"
+    } ,
+    {
+      title: "Darling U",
+      subtitle: "Philip Montalban",
+      img: "https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/uhung.fw.png?alt=media&token=1b789c7e-2915-4fd6-80cf-f21ef5bdb66a",
+      path: "https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/canciones%2Fphilip-montalban-darling-u.mp3?alt=media&token=20381bcb-c552-41f8-98c0-3d83822f9d7d"
+    } ,
+    {
+      title: "Acoustic Stories",
+      subtitle: "Philip Montalban",
+      img: "https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/uhung.fw.png?alt=media&token=1b789c7e-2915-4fd6-80cf-f21ef5bdb66a",
+      path: "https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/canciones%2Fphillip-montalban-acoustic-stories.mp3?alt=media&token=bc14860b-cba5-4123-95e4-bb8fff455571"
+    } ,
+    {
+      title: "Reggae de Coco",
+      subtitle: "Philip Montalban",
+      img: "https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/uhung.fw.png?alt=media&token=1b789c7e-2915-4fd6-80cf-f21ef5bdb66a",
+      path: "https://firebasestorage.googleapis.com/v0/b/uhung-ionic.appspot.com/o/canciones%2FMay-Pole%20_Autor_mango-ghost-sabu-rene-poochie.mp3?alt=media&token=21a6d7f1-993a-444f-b786-98f8911f9a03"
+    }    
   ];
 
   //Detalles para la canción actual
